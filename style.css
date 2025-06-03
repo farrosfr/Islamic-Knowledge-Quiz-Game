@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Warna latar belakang lembut */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+header h1 {
+    color: #2c3e50; /* Biru tua */
+    margin-bottom: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #34495e; /* Biru abu-abu */
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #3498db; /* Biru */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Biru lebih gelap saat hover */
+}
+
+.btn.correct {
+    background-color: #2ecc71; /* Hijau untuk jawaban benar */
+}
+
+.btn.wrong {
+    background-color: #e74c3c; /* Merah untuk jawaban salah */
+}
+
+.btn.correct:hover, .btn.wrong:hover {
+    opacity: 0.9;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+.start-btn, .next-btn, #restart-btn {
+    font-weight: bold;
+    padding: 12px 25px;
+}
+
+#result-area h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+#result-area p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #7f8c8d; /* Abu-abu */
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Pengetahuan Islam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kuis Pengetahuan Islam</h1>
+        </header>
+        <main>
+            <div id="quiz-area">
+                <div id="question-container" class="hide">
+                    <p id="question-text">Pertanyaan akan muncul di sini.</p>
+                    <div id="answer-buttons" class="btn-grid">
+                        <button class="btn">Jawaban 1</button>
+                        <button class="btn">Jawaban 2</button>
+                        <button class="btn">Jawaban 3</button>
+                        <button class="btn">Jawaban 4</button>
+                    </div>
+                </div>
+
+                <div id="controls">
+                    <button id="start-btn" class="start-btn btn">Mulai Kuis</button>
+                    <button id="next-btn" class="next-btn btn hide">Pertanyaan Berikutnya</button>
+                </div>
+
+                <div id="result-area" class="hide">
+                    <h2>Hasil Kuis Anda</h2>
+                    <p>Anda menjawab <span id="score">0</span> dari <span id="total-questions">0</span> pertanyaan dengan benar.</p>
+                    <button id="restart-btn" class="btn">Ulangi Kuis</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Game Islami Sederhana</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
