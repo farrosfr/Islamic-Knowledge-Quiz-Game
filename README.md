@@ -23,8 +23,8 @@ Selamat datang di Kuis Pengetahuan Islam! Ini adalah aplikasi kuis sederhana yan
 
 1.  **Unduh atau Clone Repositori:**
     ```bash
-    git clone [https://github.com/NAMA_PENGGUNA_ANDA/NAMA_REPOSITORI_ANDA.git](https://github.com/NAMA_PENGGUNA_ANDA/NAMA_REPOSITORI_ANDA.git)
-    cd NAMA_REPOSITORI_ANDA
+    git clone [https://github.com/NAMA_PENGGUNA_ANDA/NAMA_REPOSITORI_ANDA.git](https://github.com/Islamic-Knowledge-Quiz-Game.git)
+    cd Islamic-Knowledge-Quiz-Game
     ```
 2.  **Buka `index.html`:**
     Buka file `index.html` langsung di peramban web pilihan Anda (misalnya Google Chrome, Firefox, Safari, Edge).
