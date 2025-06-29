@@ -1,4 +1,5 @@
 # Islamic-Knowledge-Quiz-Game
+![License](https://img.shields.io/github/license/farrosfr/Islamic-Knowledge-Quiz-Game)
 
 **[Mencoba Live Demo](https://farrosfr.github.io/Islamic-Knowledge-Quiz-Game/)**
 
