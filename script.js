@@ -66,26 +66,31 @@ function resetState() {
 
 function selectAnswer(e) {
     const selectedButton = e.target;
-    const correct = selectedButton.dataset.correct === "true";
+    const isCorrect = selectedButton.dataset.correct === "true";
 
-    if (correct) {
+    // Tambah skor jika jawaban benar
+    if (isCorrect) {
         score++;
+        selectedButton.classList.add('correct'); // Tandai pilihan yang benar
+    } else {
+        selectedButton.classList.add('wrong'); // Tandai pilihan yang salah
     }
 
-    setStatusClass(selectedButton, correct);
+    // Nonaktifkan semua tombol dan tunjukkan mana jawaban yang benar
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct === "true");
-        button.disabled = true; // Nonaktifkan semua tombol setelah menjawab
+        // Jika tombol ini adalah jawaban yang benar, beri class 'correct'
+        if (button.dataset.correct === "true") {
+            button.classList.add('correct');
+        }
+        button.disabled = true; // Nonaktifkan tombol
     });
 
+    // Logika untuk menampilkan tombol berikutnya atau mengakhiri game
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        // Tidak ada pertanyaan lagi, tampilkan hasil setelah jeda singkat
-        // atau langsung tampilkan tombol lihat hasil
-        nextButton.classList.add('hide'); // Sembunyikan tombol next jika ini pertanyaan terakhir
-        // Tampilkan tombol untuk melihat hasil atau langsung panggil endGame
-        setTimeout(endGame, 1500); // Jeda sebelum menampilkan hasil
+        // Jeda sebelum menampilkan hasil akhir
+        setTimeout(endGame, 1500); 
     }
 }
 
