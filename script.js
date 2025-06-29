@@ -9,6 +9,8 @@ const resultAreaElement = document.getElementById('result-area');
 const scoreElement = document.getElementById('score');
 const totalQuestionsElement = document.getElementById('total-questions');
 
+const END_GAME_DELAY = 1500; // 1.5 detik
+
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
 
@@ -90,7 +92,8 @@ function selectAnswer(e) {
         nextButton.classList.remove('hide');
     } else {
         // Jeda sebelum menampilkan hasil akhir
-        setTimeout(endGame, 1500); 
+        // Ganti 1500 dengan konstanta
+        setTimeout(endGame, END_GAME_DELAY); 
     }
 }
 
